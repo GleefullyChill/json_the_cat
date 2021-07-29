@@ -18,7 +18,7 @@ describe('fetchBreedDescription', () => {
       done();
     });
   });
-  it('returns a string when the cat breed does not exist', () => {
+  it('returns undefined when the cat breed does not exist', () => {
     fetchBreedDescription('Siberyan', (err, desc) => {
       // we expect no error for this scenario
       assert.equal(desc, null);
